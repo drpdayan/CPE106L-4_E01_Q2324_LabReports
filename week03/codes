@@ -1,0 +1,3 @@
+from student import Student
+s = Student("Maria")
+print (s)
