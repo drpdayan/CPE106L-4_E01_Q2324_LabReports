@@ -1,1 +1,3 @@
-print("Hello World LR1 Problem 2")
+with open('MapuaAlmaMater.txt') as file:
+    print(file.read)
+    
