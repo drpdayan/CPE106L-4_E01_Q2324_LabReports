@@ -1,3 +1,2 @@
-with open('MapuaAlmaMater.txt') as file:
-    print(file.read)
-    
+f = open("MapuaAlmaMater.txt", "r")
+print(f.read())
