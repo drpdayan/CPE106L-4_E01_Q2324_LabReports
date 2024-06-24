@@ -1,4 +1,14 @@
-#/home/drpdayan/LocalRepo/SoftDes/Activities/CPE106L-4_E01_Q2324_LabReports/CPE106L_GRP8_LR2/statstxt.txt
+'''
+                    CPE106L-E01_Grp8_4Q2324
+stat.py is similar to one of the programming exercises for LR1 wherein
+The programs calculates the mean, median, and mode of a list
+Instead of inputting the elements on a list*(From LR1), 
+Users must input the text file that contains the said list
+'''
+
+#File name to be used: /home/drpdayan/LocalRepo/SoftDes/Activities/CPE106L-4_E01_Q2324_LabReports/CPE106L_GRP8_LR2/stats.txt
+
+#Calculates the average (mean) on a given list of numbers
 def mean(fileName):
     f = open(fileName, 'r')
     numbers = []
@@ -7,6 +17,7 @@ def mean(fileName):
         for words in words:
             numbers.append(float(words))
     
+    #returns 0 if there is an empty list
     if not numbers:
         return 0
     
@@ -18,7 +29,7 @@ def mean(fileName):
         mean /= len(numbers)
         return mean
     
-
+#Finds the median on a given list of numbers
 def median(fileName):
     f = open(fileName, 'r')
     
@@ -30,6 +41,7 @@ def median(fileName):
         for word in words:
             numbers.append(float(word))
 
+    #returns 0 if there is an empty list
     if not numbers:
         return 0
     
@@ -44,7 +56,7 @@ def median(fileName):
             return((numbers[midpoint] + numbers[midpoint - 1]) / 2)
             
 
-
+#Finds the mode on a given list of numbers
 def mode(fileName):
     f = open(fileName, 'r')
     
@@ -56,8 +68,11 @@ def mode(fileName):
         for word in wordsInLine:
             words.append(word.upper())
     
+    #returns 0 if there is an empty list
     if not words:
         return 0
+    
+
     # Obtain the set of unique words and their
     # frequencies, saving these associations in
     # a dictionary
@@ -83,13 +98,15 @@ def mode(fileName):
             
     
 def main():
+    #Input text file
     fileName = input("Enter the file name: ")
+    #Prints the output based on each function
     print("The median is", median(fileName))
     print("The mean is ", mean(fileName))
     print("The moode is", mode(fileName))
 
-main()
+
+if __name__ == "__main__":
+    main()
 
 
-#statstxt.txt
-#2 3 4 5 6 7 8
