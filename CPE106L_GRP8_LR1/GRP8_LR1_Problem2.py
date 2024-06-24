@@ -20,6 +20,8 @@ append_list = []
 
 # The program prints the text file alongside its corresponding number per line
 print ("\n" + "Mapua Alma Mater Per Line:" + "\n")
+
+append_list.append(" ") #Matches up index to line number, Also allows to use 0 as exit
 for line in f:
     linenum += 1
     print("{}: {}".format(linenum,line.strip()))
@@ -30,14 +32,14 @@ for line in f:
 
 #A while loop statement is used to choose a line number
 while True:
-    chosenlinenum = int(input("Choose a line number:"))
-    chosenlinenum -= 1 #List index starts with 0
+    chosenlinenum = int(input("\nChoose a line number:"))
+    # chosenlinenum -= 1 #List index starts with 0
     
     
     print(append_list[chosenlinenum]) #The chosen line number is then displayed 
 
     if chosenlinenum == 0: #When "0" is chosen, the program exits
-        print("Exit.")
+        print("Program End.")
         break
 
     
