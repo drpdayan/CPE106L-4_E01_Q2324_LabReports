@@ -1,6 +1,6 @@
-CPE106L-4_E01_Q42324 : GROUP8 \n
-This is the Repository for all Lab Report programming exercises of this group. \n
+**CPE106L-4_E01_Q42324 : GROUP8\**
+This is the repository for all Lab Report programming exercises for this group.\ 
 
-Group Members: \n
-Dayan, Dan Rodwin P. \n
-Magallanes, Andrea Victoria D. \n
+**Group Members:** \
+Dayan, Dan Rodwin P. \
+Magallanes, Andrea Victoria D. \
