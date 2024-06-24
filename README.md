@@ -3,4 +3,4 @@ This is the repository for all Lab Report programming exercises for this group.\
 
 **Group Members:** \
 Dayan, Dan Rodwin P. \
-Magallanes, Andrea Victoria D. \
+Magallanes, Andrea Victoria D. 
