@@ -25,11 +25,16 @@ words = [i.strip() for i in words]
 # Print all the words
 for i in range(len(words)):
       print(words[i])
-print("\n \n There are ", len(words), " lines on this text")
+print("\nThere are ", len(words), " lines on this text")
 
 # User chooses line number to print
 lineInput = 1
 while lineInput != 0:
-    lineInput = int(input("\n \n Enter line number (0 to exit): "))
+    lineInput = int(input("\nEnter line number (0 to exit): "))
     if lineInput < len(words) and lineInput > 0:
         print(words[lineInput - 1])
+
+    else:
+        print("Program End.")
+        break
+

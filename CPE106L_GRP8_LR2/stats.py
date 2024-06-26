@@ -103,7 +103,7 @@ def main():
     #Prints the output based on each function
     print("The median is", median(fileName))
     print("The mean is ", mean(fileName))
-    print("The moode is", mode(fileName))
+    print("The mode is", mode(fileName))
 
 
 if __name__ == "__main__":
