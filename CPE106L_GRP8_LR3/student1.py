@@ -1,6 +1,8 @@
 """
+                CPE106L-E01_Grp8_4Q2324
 File: student.py
 Resources to manage a student's name and test scores.
+Updated the code to create a program based on Programming Exercises 1. p.318
 """
 import random
 
@@ -40,13 +42,14 @@ class Student(object):
                " ".join(map(str, self.scores))
     
     #####
-    def equal(self, self2):
+    #3 Methods in Student class created to cimpare students' names
+    def equal(self, self2): #Method to test for equality
         return (self.name == self2.name)
 
-    def lessthan(self, self2):
+    def lessthan(self, self2): #Method to test for less than
         return (self.name < self2.name)
 
-    def greaterthanequal(self, self2):
+    def greaterthanequal(self, self2): #Method to test for greater than
         return (self.name > self2.name)
     #####
 
@@ -57,12 +60,12 @@ def main():
     student1 = Student("Ken", 5)
     print(student1)
     for i in range(1, 6):
-        student1.setScore(i, 100)
+        student1.setScore(i, 100) 
     print(student1)
 
     student2 = Student("Sophie", 5)
     for i in range(1, 6):
-        student2.setScore(i, random.randint(70,100))
+        student2.setScore(i, random.randint(70,100))#Utilized the random function to set different grades on selected students
     print(student2)
 
     student3 = Student ("Jerome", 5)
@@ -80,15 +83,19 @@ def main():
         student5.setScore(i, random.randint(75,100))
     print(student5)
 
-    if student1.equal(student3):
-        print("Equal")
-    else:
-        print("Not Equal")
+    #Conditional Statements to check wheter each method 
+    # correctly expresses the relationship of equality of each object
+    #Calls each method on student1, passing student 3 as an argument
+    if student1.equal(student3): #If return value of method is true then...
     
-    if student3.lessthan(student1):
+        print("Equal") 
+    else:
+        print("Not Equal") #Otherwise
+    
+    if student1.lessthan(student3):
         print("Less Than")
     
-    if student3.greaterthanequal(student1):
+    if student1.greaterthanequal(student3):
         print("Greater Than or Equal")
     #####
 
