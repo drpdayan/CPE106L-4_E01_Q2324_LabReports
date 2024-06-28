@@ -36,7 +36,15 @@ class Bank:
         """Returns the string representation of the bank."""
         return "\n".join(map(str, self.accounts.values()))
         ###
-        return "\n".join([str(v) for (k, v) in sorted(self.accounts.items(), key = lambda account: account[1].getName())])
+
+        return "\n".join(
+            [
+                str(v)
+                for (k,v) in sorted(
+                    self.accounts.items(), key=lambda account: account[1].getName()
+                )
+            ]
+        )
         ###
 
         
